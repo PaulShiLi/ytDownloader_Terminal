@@ -1,0 +1,6 @@
+# Stuff to ignore
+*.env
+**/__pycache__
+**/migration
+*.DS_Store
+**/.vscode
