@@ -4,3 +4,4 @@
 **/migration
 *.DS_Store
 **/.vscode
+**/.idea
