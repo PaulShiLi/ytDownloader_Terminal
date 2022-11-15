@@ -99,6 +99,10 @@ type = <argument type>
 	-f EXTENSION, --extension EXTENSION
                         Extension for output file
 
+* type = <string> (File extensions could impact sound + video quality due to lossy/lossless compression)
+  	-afv AUDIOEXT_VIDEO, --audioext-video AUDIOEXT_VIDEO
+                        Extension for video audio
+
 	-v, --video           Change default audio download to video | Default: False
 
 (Disables tqdm loading bars and replace it with text)
