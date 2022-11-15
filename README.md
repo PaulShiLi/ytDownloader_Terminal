@@ -35,10 +35,10 @@ python .\ytDownloader_Terminal\ [-l] [-t] [-d] [-f] [-v] [-db]
 type = <argument type>
 () = Comments
 
-  -h, --help            show this help message and exit
+	-h, --help            show this help message and exit
 
 * type = <string> (Youtube link has to be public/unlisted and could be either single/playlist)
-  -l LINK, --link LINK  Youtube link | i.e: "https://www.youtube.com/watch?v=someRandomVideo"
+	-l LINK, --link LINK  Youtube link | i.e: "https://www.youtube.com/watch?v=someRandomVideo"
 ```
 
 ## Audio Download
@@ -65,11 +65,11 @@ type = <argument type>
                         Include custom download path | Default: C:\YOUR_PATH_TO_FOLDER/ytDownloader_Terminal/Downloads
 
 * type = <string> (File extensions could impact sound + video quality due to lossy/lossless compression)
-  -f EXTENSION, --extension EXTENSION
+ 	-f EXTENSION, --extension EXTENSION
                         Extension for output file
 
 (Disables tqdm loading bars and replace it with text)
-  -db, --debug          Enable debug | Default: False
+ 	-db, --debug          Enable debug | Default: False
 ```
 
 ## Video Download
@@ -92,15 +92,15 @@ type = <argument type>
                         Number of threads when downloading YouTube links | Default: 4
 
 * type = <string> (Download path for files)
-  -d DOWNLOADPATH, --downloadPath DOWNLOADPATH
+	-d DOWNLOADPATH, --downloadPath DOWNLOADPATH
                         Include custom download path | Default: C:\YOUR_PATH_TO_FOLDER/ytDownloader_Terminal/Downloads
 
 * type = <string> (File extensions could impact sound + video quality due to lossy/lossless compression)
-  -f EXTENSION, --extension EXTENSION
+	-f EXTENSION, --extension EXTENSION
                         Extension for output file
 
-  -v, --video           Change default audio download to video | Default: False
+	-v, --video           Change default audio download to video | Default: False
 
 (Disables tqdm loading bars and replace it with text)
-  -db, --debug          Enable debug | Default: False
+	-db, --debug          Enable debug | Default: False
 ```
