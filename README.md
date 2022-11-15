@@ -56,19 +56,19 @@ python .\ytDownloader_Terminal\ [-l] [-t] [-d] [-f] [-db]
 type = <argument type>
 () = Comments
 
-	* type = int (Make sure to not lag out your computer by setting a high value for this one)
+* type = int (Make sure to not lag out your computer by setting a high value for this one)
 	-t THREADS, --threads THREADS
                         Number of threads when downloading YouTube links | Default: 4
 
-	* type = <string> (Download path for files)
+* type = <string> (Download path for files)
   -d DOWNLOADPATH, --downloadPath DOWNLOADPATH
                         Include custom download path | Default: C:\YOUR_PATH_TO_FOLDER/ytDownloader_Terminal/Downloads
 
-	* type = <string> (File extensions could impact sound + video quality due to lossy/lossless compression)
+* type = <string> (File extensions could impact sound + video quality due to lossy/lossless compression)
   -f EXTENSION, --extension EXTENSION
                         Extension for output file
 
-	(Disables tqdm loading bars and replace it with text)
+(Disables tqdm loading bars and replace it with text)
   -db, --debug          Enable debug | Default: False
 ```
 
@@ -91,16 +91,16 @@ type = <argument type>
 	-t THREADS, --threads THREADS
                         Number of threads when downloading YouTube links | Default: 4
 
-	* type = <string> (Download path for files)
+* type = <string> (Download path for files)
   -d DOWNLOADPATH, --downloadPath DOWNLOADPATH
                         Include custom download path | Default: C:\YOUR_PATH_TO_FOLDER/ytDownloader_Terminal/Downloads
 
-	* type = <string> (File extensions could impact sound + video quality due to lossy/lossless compression)
+* type = <string> (File extensions could impact sound + video quality due to lossy/lossless compression)
   -f EXTENSION, --extension EXTENSION
                         Extension for output file
 
   -v, --video           Change default audio download to video | Default: False
 
-	(Disables tqdm loading bars and replace it with text)
+(Disables tqdm loading bars and replace it with text)
   -db, --debug          Enable debug | Default: False
 ```
