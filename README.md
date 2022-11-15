@@ -8,7 +8,7 @@ This project aims to provide users the functionality to download YouTube videos 
 
 ## Installing for Audio + Video usage
 
-Installation is fairly simple! Just run the command below to install all necessary python modules needed to run this project. ****You will need to install additional software if you are planning on downloading video!*** 
+Installation is fairly simple! Just run the command below to install all necessary python modules needed to run this project. ****You will need to install additional software if you are planning on downloading video!***
 
 ```bash
 pip3 install -r .\ASCII_Bad_Apple_Remastered\requirements.txt
@@ -16,7 +16,7 @@ pip3 install -r .\ASCII_Bad_Apple_Remastered\requirements.txt
 
 ## Video usage
 
-This program requires ffmpeg to handle video + audio streams! 
+This program requires ffmpeg to handle video + audio streams!
 
 Install ffmpeg: [https://ffmpeg.org/download.html](https://ffmpeg.org/download.html)
 
@@ -31,9 +31,9 @@ python .\ytDownloader_Terminal\ [-l] [-t] [-d] [-f] [-v] [-db]
 ```
 
 ```bash
-	* = Arg required
-	type = <argument type>
-	() = Comments
+* = Arg required
+type = <argument type>
+() = Comments
 
   -h, --help            show this help message and exit
 
@@ -52,11 +52,11 @@ python .\ytDownloader_Terminal\ [-l] [-t] [-d] [-f] [-db]
 ### Flags
 
 ```bash
-	* = Arg required
-	type = <argument type>
-	() = Comments
+* = Arg required
+type = <argument type>
+() = Comments
 
-* type = int (Make sure to not lag out your computer by setting a high value for this one)
+	* type = int (Make sure to not lag out your computer by setting a high value for this one)
 	-t THREADS, --threads THREADS
                         Number of threads when downloading YouTube links | Default: 4
 
@@ -74,7 +74,7 @@ python .\ytDownloader_Terminal\ [-l] [-t] [-d] [-f] [-db]
 
 ## Video Download
 
-To download video, include the 
+To download video, include the
 
 ```bash
 python .\ytDownloader_Terminal\ -v [-l] [-t] [-d] [-f] [-db]
@@ -83,11 +83,11 @@ python .\ytDownloader_Terminal\ -v [-l] [-t] [-d] [-f] [-db]
 Flags
 
 ```bash
-	* = Arg required
-	type = <argument type>
-	() = Comments
+* = Arg required
+type = <argument type>
+() = Comments
 
-* type = int (Make sure to not lag out your computer by setting a high value for this one)
+	* type = int (Make sure to not lag out your computer by setting a high value for this one)
 	-t THREADS, --threads THREADS
                         Number of threads when downloading YouTube links | Default: 4
 
