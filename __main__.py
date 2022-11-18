@@ -11,8 +11,8 @@ if "\\" in str(os.getcwd()):
 
 def startDownload(ytLink, filetype, fileformat, downloadFolder, threadNum, debug, optionalAudio=None):
     outtmpl = f'{downloadFolder}/%(id)s.{fileformat}'
-    print(outtmpl)
-    input()
+    # print(outtmpl)
+    # input()
     if "\\" in str(os.getcwd()):
         outtmpl = f'{downloadFolder}\\%(id)s.{fileformat}'
     if filetype == "af":
@@ -25,7 +25,7 @@ def startDownload(ytLink, filetype, fileformat, downloadFolder, threadNum, debug
             'restrictfilenames': True,
             'noplaylist': False,
             'nocheckcertificate': True,
-            'ignoreerrors': False,
+            'ignoreerrors': True,
             'logtostderr': False,
             'quiet': True,
             'no_warnings': True,
@@ -42,7 +42,7 @@ def startDownload(ytLink, filetype, fileformat, downloadFolder, threadNum, debug
             'restrictfilenames': True,
             'noplaylist': False,
             'nocheckcertificate': True,
-            'ignoreerrors': False,
+            'ignoreerrors': True,
             'logtostderr': False,
             'quiet': True,
             'no_warnings': True,

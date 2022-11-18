@@ -47,7 +47,7 @@ class staticFunc:
 
     @staticmethod
     def renameTitle(title: str):
-        forbidChar = ["|", "\\", "/", "?", ".", '"']
+        forbidChar = ["|", "\\", "/", "?", ".", '"', ":"]
         for char in forbidChar:
             title = title.replace(char, "-")
         return title
@@ -64,6 +64,8 @@ class staticFunc:
         threadsEnqueue = [[] for thread in range(0, threadNum)]
         try:
             for entry in result["entries"]:
+                if entry == None:
+                    continue
                 link = f"{baseLink}{entry['id']}"
                 title = staticFunc.renameTitle(entry["title"])
                 id = entry["id"]
@@ -102,7 +104,7 @@ class youtubeDownload:
         self.threadNum = threadNum
         if "\\" in str(os.getcwd()):
             self.downloadFolder = self.downloadFolder.replace("/", "\\")
-        dataFuture = self.urlData(export=True)
+        dataFuture = self.urlData()
 
     def getEnqueueNum(self, threadEnqueue):
         for i in range(len(self.threadsEnqueue)):
@@ -152,11 +154,15 @@ class youtubeDownload:
                 if self.debug == False:
                     self.progressBarUpdate(updateType="thread", enqueueNum=self.getEnqueueNum(threadEnqueue=threadEnqueue))
                     self.statusBarUpdate(title=title, status="downloaded", enqueueNum=self.getEnqueueNum(threadEnqueue=threadEnqueue))
+                else:
+                    print(f"[{index + 1}] | Video: {title} downloaded...")
                 continue
             if staticFunc.validate(f"/{parentPath}/{title}.{self.ext}") == True:
                 if self.debug == False:
                     self.progressBarUpdate(updateType="thread", enqueueNum=self.getEnqueueNum(threadEnqueue=threadEnqueue))
                     self.statusBarUpdate(title=title, status="downloaded", enqueueNum=self.getEnqueueNum(threadEnqueue=threadEnqueue))
+                else:
+                    print(f"[{index + 1}] | Video: {title} downloaded...")
                 continue
             try:
                 if self.debug == False:
