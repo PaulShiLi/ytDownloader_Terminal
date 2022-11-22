@@ -11,7 +11,7 @@ This project aims to provide users the functionality to download YouTube videos 
 Installation is fairly simple! Just run the command below to install all necessary python modules needed to run this project. ****You will need to install additional software if you are planning on downloading video!***
 
 ```bash
-pip3 install -r .\ASCII_Bad_Apple_Remastered\requirements.txt
+pip3 install -r .\ytDownloader_Terminal\requirements.txt
 ```
 
 ## Video usage
