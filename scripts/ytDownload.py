@@ -148,7 +148,10 @@ class youtubeDownload:
             url, title, id = threadEnqueue[index]
             if self.downloadFolder not in str(os.getcwd()):
                 os.chdir(self.downloadFolder)
-            parentPath = "/".join(str(os.getcwd()).split("\\")[1:])
+            if "\\" in str(os.getcwd()):
+                parentPath = "/".join(str(os.getcwd()).split("\\")[1:])
+            else:
+                parentPath = "/".join(str(os.getcwd()).split("/")[1:])
             if staticFunc.validate(f"/{parentPath}/{id}.{self.ext}") == True:
                 staticFunc.renameFile(parentPath=parentPath, id=id, ext=self.ext, title=title)
                 if self.debug == False:
