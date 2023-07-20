@@ -81,6 +81,10 @@ class parse:
         parser.add_argument("-db", "--debug", action='store_true', help="Enable debug | "
                                                                         "Default: False")
 
+        # Check if default download folder exists
+        if not os.path.exists(f"{os.getcwd()}/ytDownloader_Terminal/Downloads"):
+            os.mkdir(f"{os.getcwd()}/ytDownloader_Terminal/Downloads")
+
         # parse the arguments from standard input
         args = parser.parse_args()
         if args.video == True:
